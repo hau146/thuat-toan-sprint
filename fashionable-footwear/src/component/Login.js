@@ -4,23 +4,31 @@ import {Link} from "react-router-dom";
 export function Login(){
     return(
         <div>
+            <section style={{padding:"1rem"}} className="abt">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="wrapper">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div className="container-fluid vh-100 overflow-auto">
                 <div className="row vh-100 ">
                     <div className="col-lg-6 bg-gray p-5 text-center">
                         <h4 className="text-center fw-bolder fs-2">Đăng Ký</h4>
                         <p className="mb-3 fs-7">Đăng ký ngay và khám phá những đôi giày mới</p>
-                        <Link to="signUp">
+                        <Link to="/signUp">
                             <button className="btn fw-bold mb-5 btn-outline-success px-4 rounded-pill">
                                 Đi tới
                             </button>
                         </Link>
-                        <div className="img-cover p-4">
-                            <img src="https://i.pinimg.com/564x/1d/2d/b8/1d2db849c2595a6d5292b872538745ac.jpg" alt="" />
-                        </div>
+
                     </div>
                     <div className="col-lg-6 p  vh-100">
                         <div className="row d-flex vh-100">
-                            <div className="col-md-8 p-4 ikigui m-auto text-center align-items-center">
+                            <div style={{height:"80%"}} className="col-md-8 p-4 ikigui m-auto text-center align-items-center">
                                 <h4 className="text-center fw-bolder mb-4 fs-2">Đăng Nhập</h4>
                                 <div className="input-group mb-4">
             <span
@@ -52,6 +60,10 @@ export function Login(){
                                         aria-describedby="basic-addon1"
                                     />
                                 </div>
+                                <div className="input-group mb-4">
+                                    <input type="checkbox"/>Ghi nhớ mật khẩu
+                                </div>
+
                                 <button className="btn btn-lg fw-bold fs-7 btn-success  w-100">
                                     Đăng nhập ngay
                                 </button>

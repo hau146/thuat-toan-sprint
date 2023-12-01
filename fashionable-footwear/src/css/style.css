@@ -10,7 +10,7 @@ Description: This Template is created for Youtubers
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
 @import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
 .bg-primary {
-  background-color: #8119f5 !important;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/sneaker-db938.appspot.com/o/image-sneaker%2F26bfec4aa0ce0dba95003d8b4fa86f94.jpg?alt=media&token=859d2f58-0685-48e4-a4e8-1124edc37c3e");
 }
 
 .text-primary {
@@ -414,7 +414,9 @@ body {
 }
 
 .bg-gray {
-  background: rgba(217, 217, 217, 0.25);
+  /*background: rgba(217, 217, 217, 0.25);*/
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/sneaker-db938.appspot.com/o/image-sneaker%2Fbg-login2.jpg?alt=media&token=057f410a-40f4-4a47-bda0-e95438938ca2");
+  background-size: cover;
 }
 
 .btn-xs {

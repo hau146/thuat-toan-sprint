@@ -1,26 +1,34 @@
 import "../css/bootstrap.min.css"
 import "../css/style.css"
+import {Link} from "react-router-dom";
 export function SignUp(){
     return(
         <div>
+            <section style={{padding:"1rem"}} className="abt">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="wrapper">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <div className="container-fluid vh-100 overflow-auto">
                 <div className="row vh-100 ">
                     <div className="col-lg-6 bg-gray p-5 text-center">
-                        <h4 className="text-center fw-bolder fs-2">Đăng Ký</h4>
-                        <p className="mb-3 fs-7">Already gave an account ?</p>
-                        <a href="index.html">
+                        <h4 className="text-center fw-bolder fs-2">Đăng Nhập</h4>
+                        <p className="mb-3 fs-7">Đăng nhập ngay nếu bạn đã có tài khoản</p>
+                        <Link to="/login">
                             <button className="btn fw-bold mb-5 btn-outline-success px-4 rounded-pill">
-                                log In
+                                Đi tới
                             </button>
-                        </a>
-                        <div className="img-cover p-4">
-                            <img src="assets/images/loginbg.svg" alt="" />
-                        </div>
+                        </Link>
                     </div>
                     <div className="col-lg-6 p  vh-100">
                         <div className="row d-flex vh-100">
-                            <div className="col-md-8 p-4 ikigui m-auto text-center align-items-center">
-                                <h4 className="text-center fw-bolder mb-4 fs-2">Login</h4>
+                            <div style={{height:"80%"}} className="col-md-8 p-4 ikigui m-auto text-center align-items-center">
+                                <h4 className="text-center fw-bolder mb-4 fs-2">Đăng ký</h4>
                                 <div className="input-group mb-4">
             <span
                 className="input-group-text border-end-0 inbg"
@@ -31,7 +39,7 @@ export function SignUp(){
                                     <input
                                         type="text"
                                         className="form-control ps-2 border-start-0 fs-7 inbg form-control-lg mb-0"
-                                        placeholder="Enter Full Name"
+                                        placeholder="Tên tài khoản"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -61,7 +69,7 @@ export function SignUp(){
                                     <input
                                         type="password"
                                         className="form-control ps-2 fs-7 border-start-0 form-control-lg inbg mb-0"
-                                        placeholder="Enter Password"
+                                        placeholder="Nhập vào mật khẩu"
                                         aria-label="Username"
                                         aria-describedby="basic-addon1"
                                     />
@@ -82,7 +90,7 @@ export function SignUp(){
                                     />
                                 </div>
                                 <button className="btn btn-lg fw-bold fs-7 btn-success  w-100">
-                                    Register
+                                    Đăng ký ngay
                                 </button>
                                 <p className="text-center py-4 fw-bold fs-8">
                                     Or Sign in with social platforms

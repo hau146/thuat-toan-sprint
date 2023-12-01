@@ -37,7 +37,7 @@ img {
   max-width: 100%; }
 
 h5 {
-  font-family: 'Yellowtail', cursive; }
+  font-family: 'cursive', sans-serif }
 
 section {
   padding: 3.125rem 0;
@@ -542,7 +542,7 @@ header {
       text-align: justify; }
 
 .se-five {
-  background: url(../images/background/abt-02.jpg) no-repeat center fixed;
+  background: url(https://firebasestorage.googleapis.com/v0/b/sneaker-db938.appspot.com/o/image-sneaker%2Faadb7c9bc9dff8d7b4f7c35ee03eea84.jpg?alt=media&token=f5775826-740f-407f-84db-10691b6cc82d) no-repeat center fixed;
   background-size: cover;
   width: 100%;
   position: relative; }
@@ -655,7 +655,7 @@ header {
           transform: translateY(0); }
         .menu-items .wrapper .tab-content .tab-pane figure {
           display: block;
-          margin: 0;
+          padding: 7% 0;
           position: relative;
           height: 100%;
           width: 100%;
@@ -666,7 +666,9 @@ header {
           .menu-items .wrapper .tab-content .tab-pane figure .images {
             display: block;
             width: 100%;
-            position: relative; }
+            position: relative;
+            max-height: 52%;
+          }
           .menu-items .wrapper .tab-content .tab-pane figure .content {
             display: block;
             padding: .625rem 1.25rem;
@@ -1045,13 +1047,15 @@ header {
                 color: #fff; }
 
 .abt {
-  background: url(../images/background/abt-01.jpg) no-repeat center;
-  background-size: cover; }
+  background: rgb(128, 128, 128);
+}
   .abt .wrapper {
     position: relative;
     display: block;
     padding: 1.25rem 0;
-    text-align: center; }
+    text-align: center;
+    margin: 4% 0;
+  }
     .abt .wrapper h2 {
       font-size: 1.25rem;
       color: #37da11;

@@ -1,62 +1,10 @@
-import "../css/bootstrapMainPage.min.css"
-import "../css/owl.carousel.css"
+import "../css/bootstrap.min.css"
+import "../css/plugins/owl.carousel.min.css"
 import "../css/mainPage.css"
+import {Link} from "react-router-dom";
 export function MainPage(){
     return(
         <>
-            <header>
-                <div className="main-nav">
-                    <div className="logo">
-                        <img src="assets/images/logo/logo1.png" />
-                    </div>
-                    <div className="menu-toggle" />
-                    <div className="menu">
-                        <ul>
-                            <li>
-                                <a href="index.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="about-us.html">About Us</a>
-                            </li>
-                            <li>
-                                <a href="services.html">Services</a>
-                            </li>
-                            <li>
-                                <a href="blog.html">Blog</a>
-                            </li>
-                            <li>
-                                <a href="contact-us.html">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="book">
-                        <ul>
-                            <li>
-                                <a href="#">Book a Tabble</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="social-media">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i className="flaticon-facebook" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i className="flaticon-twitter" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i className="flaticon-linkedin" />
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </header>
             {/* //////////////////////header-End/////////////////////// */}
             {/* ====================================================== */}
             {/* //////////////////////Main-Started/////////////////////// */}
@@ -71,18 +19,17 @@ export function MainPage(){
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <img
-                                    src="https://i.pinimg.com/564x/0a/b8/d9/0ab8d95277147528bdc0890daeb0fe76.jpg"
+                                    src="https://firebasestorage.googleapis.com/v0/b/sneaker-db938.appspot.com/o/image-sneaker%2Fbackgounrd-mainpage.jpg?alt=media&token=e8b259e8-36f7-4972-a435-108504110ebb"
                                     className=""
                                     alt="..."
                                 />
                                 <div className="wrapper">
-                                    <h6>Exclusive Offer</h6>
-                                    <h1>We are here to provide the best service</h1>
+                                    <h6>Fashionable Footwear</h6>
+                                    <h1>Trải nghiệm những đôi giày tốt nhất!</h1>
                                     <p>
-                                        It is a long established fact that a reader will be distracted
-                                        by the readable content of a page when looking at its layout.
+                                        Sẵn sàng cho mọi bước đi - Với giày từ shop chúng tôi!
                                     </p>
-                                    <a href="#">Order Now</a>
+                                    <a href="#">Đặt hàng ngay bây giờ</a>
                                 </div>
                             </div>
                             <div className="carousel-item">
@@ -125,7 +72,7 @@ export function MainPage(){
                             data-slide="prev"
                         >
                             <span className="carousel-control-prev-icon" aria-hidden="true" />
-                            <span className="sr-only">Previous</span>
+                            {/*<span className="sr-only">Previous</span>*/}
                         </a>
                         <a
                             className="carousel-control-next"
@@ -134,7 +81,7 @@ export function MainPage(){
                             data-slide="next"
                         >
                             <span className="carousel-control-next-icon" aria-hidden="true" />
-                            <span className="sr-only">Next</span>
+                            {/*<span className="sr-only">Next</span>*/}
                         </a>
                     </div>
                 </section>
@@ -146,7 +93,7 @@ export function MainPage(){
                                 <div className="wrapper">
                                     <div className="content">
                                         <div className="image">
-                                            <img src="assets/images/abt-img/1.jpg" />
+                                            <img src="https://i.pinimg.com/564x/c8/7b/f6/c87bf61b04a1a53f505636f31a2152dd.jpg" />
                                         </div>
                                     </div>
                                 </div>
@@ -154,23 +101,17 @@ export function MainPage(){
                             <div className="col-md-6 col-sm-12">
                                 <div className="wrapper">
                                     <div className="content">
-                                        <h5>About Us</h5>
-                                        <h3>We are here with 20 years of experience</h3>
+                                        <h5>Về chúng tôi</h5>
+                                        <h3>Chúng tôi ở đây với những đôi giày tuyệt nhất</h3>
                                         <p>
-                                            There are many variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered alteration in some
-                                            form, by injected humour, or randomised words which don't look
-                                            even slightly believable. If you are going to use a passage of
-                                            Lorem Ipsum, you need to be sure there isn't anything
-                                            embarrassing hidden in the middle of text. All the Lorem Ipsum
-                                            generators on the Internet tend to repeat predefined chunk
+                                            Trên con đường đầy sự sôi động và phong cách, đôi sneaker không chỉ là một đôi giày thông thường.
+                                            Nó là biểu tượng của sự tự do, sự trẻ trung và cái nhìn đậm chất cá nhân.
+                                            Mỗi đường nét, mỗi đường chỉ may mắn trên đôi sneaker đều kể lên câu chuyện riêng của chủ nhân.
+                                            Với sự phối hợp tinh tế của chất liệu, màu sắc và kiểu dáng,
+                                            sneaker không chỉ mang đến sự thoải mái và linh hoạt trong mọi bước chân,
+                                            mà còn là nguồn cảm hứng để khám phá thế giới xung quanh. Bước đi tự tin,
+                                            thể hiện phong cách riêng của bạn và để đôi sneaker trở thành người bạn đồng hành trung thành trong cuộc sống đầy màu sắc.
                                         </p>
-                                        <a href="#">Read More</a>
-                                        <li>
-                                            <h4>David Ambrose</h4>
-                                            <span>CEO &amp; Founder</span>
-                                            <img src="assets/images/team/person.jpg" />
-                                        </li>
                                     </div>
                                 </div>
                             </div>
@@ -183,14 +124,12 @@ export function MainPage(){
                         <div className="row">
                             <div className="col-12">
                                 <div className="heading">
-                                    <h5>Work</h5>
-                                    <h2>How It Works</h2>
+                                    <h5>Sneaker</h5>
+                                    <h2>Chất lượng đến từ đâu ?</h2>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Asperiores officiis explicabo blanditiis consequuntur fugit
-                                        fugiat, incidunt totam consectetur veritatis minus corporis
-                                        doloribus, qui maxime velit nesciunt, officia praesentium odit
-                                        facilis.
+                                        Khi chọn đôi sneaker chất lượng, bạn đang đầu tư vào sự thoải mái,
+                                        phong cách và sự đáng tin cậy. Và chúng tôi cam kết mang đến những giá trị đó.
+                                        <br/>Mỗi đôi sneaker là một tác phẩm nghệ thuật đẹp đến từng đường chỉ may.
                                     </p>
                                 </div>
                             </div>
@@ -199,12 +138,10 @@ export function MainPage(){
                                     <div className="content">
                                         <ol>
                                             <li>
-                                                <i className="flaticon-fish" />
-                                                <h4>Pick Meals</h4>
+                                                <i className="fa-brands fa-cloudversify"></i>
+                                                <h4>Đa dạng mẫu mã</h4>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Asperiores officiis explicabo blanditiis consequuntur
-                                                    fugit
+                                                    Cung cấp một loạt các mẫu sneaker đa dạng về kiểu dáng, màu sắc và thương hiệu.
                                                 </p>
                                             </li>
                                         </ol>
@@ -216,12 +153,11 @@ export function MainPage(){
                                     <div className="content">
                                         <ol>
                                             <li>
-                                                <i className="flaticon-shipped" />
-                                                <h4>Fast Deliveries</h4>
+                                                <i className="fa-solid fa-thumbs-up"></i>
+                                                <h4>Đáng tin cậy</h4>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Asperiores officiis explicabo blanditiis consequuntur
-                                                    fugit
+                                                    Đảm bảo tính đáng tin cậy của shop bằng cách thực hiện cam kết về chất lượng sản phẩm,
+                                                    giao hàng đúng hẹn và hỗ trợ khách hàng tận tâm.
                                                 </p>
                                             </li>
                                         </ol>
@@ -233,12 +169,11 @@ export function MainPage(){
                                     <div className="content">
                                         <ol>
                                             <li>
-                                                <i className="flaticon-tap" />
-                                                <h4>choose How Often</h4>
+                                                <i className="fa-solid fa-truck-fast"></i>
+                                                <h4>Chính sách đổi trả linh hoạt</h4>
                                                 <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                    Asperiores officiis explicabo blanditiis consequuntur
-                                                    fugit
+                                                    Cung cấp chính sách đổi trả linh hoạt và công bằng để bạn cảm thấy an tâm khi mua sắm sản phẩm.
+                                                    Cho phép bạn có sự tự tin khi đặt mua và biết rằng bạn có thể yên tâm đổi trả nếu cần thiết.
                                                 </p>
                                             </li>
                                         </ol>
@@ -255,116 +190,27 @@ export function MainPage(){
                         <div className="row">
                             <div className="col-12">
                                 <div className="wrapper">
-                                    <h5>29% Discount</h5>
-                                    <h2>Enjoy with Family and Friends</h2>
+                                    <h5>Bạn đã sẵn sàng ?</h5>
+                                    <h2>Vào danh mục và lựa chọn những đôi giày đẹp nhất</h2>
                                     <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                        enim minim veniam, quis nostrud exercitation ullamco
+                                        Những đôi sneaker thực sự đáng để bạn tự hào.
+                                        Với sự kết hợp giữa phong cách đương đại và sự tiện ích,
+                                        nó sẽ làm bạn xuất sắc trong mọi hoàn cảnh.
                                     </p>
-                                    <a>View More</a>
+                                    <a>Đi tới</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
                 {/* ========================================================================= */}
-                <section className="se-four">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="heading">
-                                    <h2>Services</h2>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 col-xs-12">
-                                <div className="wrapper">
-                                    <div className="content">
-                                        <img src="assets/images/icons/ico-1.png" />
-                                        <h4>High Quality Foods</h4>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered alteration in some
-                                            form, by injected humou
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 col-xs-12">
-                                <div className="wrapper">
-                                    <div className="content">
-                                        <img src="assets/images/icons/ico-2.png" />
-                                        <h4>Inspiring Recipes</h4>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered alteration in some
-                                            form, by injected humou
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 col-xs-12">
-                                <div className="wrapper">
-                                    <div className="content">
-                                        <img src="assets/images/icons/ico-3.png" />
-                                        <h4>Salutary Meals</h4>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered alteration in some
-                                            form, by injected humou
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 col-xs-12">
-                                <div className="wrapper">
-                                    <div className="content">
-                                        <img src="assets/images/icons/ico-4.png" />
-                                        <h4>Veteran Staff</h4>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered alteration in some
-                                            form, by injected humou
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 col-xs-12">
-                                <div className="wrapper">
-                                    <div className="content">
-                                        <img src="assets/images/icons/ico-5.png" />
-                                        <h4>Pristine Ingredientss</h4>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered alteration in some
-                                            form, by injected humou
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-md-4 col-sm-6 col-xs-12">
-                                <div className="wrapper">
-                                    <div className="content">
-                                        <img src="assets/images/icons/ico-6.png" />
-                                        <h4>Express Delivery</h4>
-                                        <p>
-                                            There are many variations of passages of Lorem Ipsum
-                                            available, but the majority have suffered alteration in some
-                                            form, by injected humou
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
                 {/* ========================================================================= */}
                 <section className="menu-items">
                     <div className="container">
                         <div className="row">
                             <div className="col-12">
                                 <div className="heading">
-                                    <h2>Our Menu</h2>
+                                    <h2>1 vài sản phẩm</h2>
                                 </div>
                             </div>
                             <div className="col-12">
@@ -380,7 +226,7 @@ export function MainPage(){
                                                 aria-controls="all"
                                                 aria-selected="true"
                                             >
-                                                Starters
+                                                Nike
                                             </a>
                                         </li>
                                         <li className="nav-item">
@@ -393,7 +239,7 @@ export function MainPage(){
                                                 aria-controls="profile"
                                                 aria-selected="false"
                                             >
-                                                breakfast
+                                                Adidas
                                             </a>
                                         </li>
                                         <li className="nav-item">
@@ -406,7 +252,7 @@ export function MainPage(){
                                                 aria-controls="contact"
                                                 aria-selected="false"
                                             >
-                                                lunch
+                                                Jordan
                                             </a>
                                         </li>
                                         <li className="nav-item">
@@ -419,7 +265,7 @@ export function MainPage(){
                                                 aria-controls="contact"
                                                 aria-selected="false"
                                             >
-                                                dinner
+                                                Vans
                                             </a>
                                         </li>
                                         <li className="nav-item">
@@ -432,7 +278,7 @@ export function MainPage(){
                                                 aria-controls="contact"
                                                 aria-selected="false"
                                             >
-                                                Beverage
+                                                Converse
                                             </a>
                                         </li>
                                     </ul>
@@ -447,46 +293,34 @@ export function MainPage(){
                                                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                                     <figure>
                                                         <div className="images">
-                                                            <img src="assets/images/menu/1.jpg" />
+                                                            <img src="https://firebasestorage.googleapis.com/v0/b/sneaker-db938.appspot.com/o/image-sneaker%2Fnike3.png?alt=media&token=9de99014-b0b9-4701-97bb-b22cc6731f1f" />
                                                         </div>
                                                         <div className="content">
-                                                            <h4>Almond Baked Brie</h4>
-                                                            <p>
-                                                                Pork, chicken and vegetable fried rolls served with
-                                                                lettuce wraps
-                                                            </p>
-                                                            <a>order now</a>
+                                                            <h4>Nike Fleshes out the Air Max</h4>
+                                                            <a>Đặt ngay</a>
                                                         </div>
                                                     </figure>
                                                 </div>
                                                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                                     <figure>
                                                         <div className="images">
-                                                            <img src="assets/images/menu/2.jpg" />
+                                                            <img src="https://firebasestorage.googleapis.com/v0/b/sneaker-db938.appspot.com/o/image-sneaker%2Fnike1.png?alt=media&token=669f04ff-08d8-4c2b-9ab1-7cd0ac960eb1" />
                                                         </div>
                                                         <div className="content">
-                                                            <h4>Tuscan Flatbread</h4>
-                                                            <p>
-                                                                Pork, chicken and vegetable fried rolls served with
-                                                                lettuce wraps
-                                                            </p>
-                                                            <a>order now</a>
+                                                            <h4>Ui Design Nike Air Max Shoe</h4>
+                                                            <a>Đặt ngay</a>
                                                         </div>
                                                     </figure>
                                                 </div>
                                                 <div className="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-12">
                                                     <figure>
                                                         <div className="images">
-                                                            <img src="assets/images/menu/3.jpg" />
+                                                            <img src="https://firebasestorage.googleapis.com/v0/b/sneaker-db938.appspot.com/o/image-sneaker%2Fnike2.png?alt=media&token=3a730e26-da03-4888-b379-33492aaf75d3" />
                                                         </div>
                                                         <div className="content">
-                                                            <h4>Spicy Clup</h4>
-                                                            <p>
-                                                                Pork, chicken and vegetable fried rolls served with
-                                                                lettuce wraps
-                                                            </p>
-                                                            <a>order now</a>
-                                                        </div>
+                                                            <h4>Air Force 1 "07 LV8"Kings Sneakers</h4>
+                                                            <a>Đặt ngay</a>
+                                                            </div>
                                                     </figure>
                                                 </div>
                                             </div>
@@ -713,391 +547,10 @@ export function MainPage(){
                         </div>
                     </div>
                 </section>
-                {/* ========================================================================= */}
-                <section className="blog">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="heading">
-                                    <h2>BLOG POSTS</h2>
-                                </div>
-                            </div>
-                            <div className="col-12">
-                                <div className="owl-carousel owl-theme">
-                                    <div className="item">
-                                        <div className="wrapper">
-                                            <div className="content">
-                                                <article className="blog-sub">
-                                                    <div className="blog-content">
-                                                        <img src="assets/images/blog/1.jpg" />
-                                                    </div>
-                                                    <div className="blog-content-date">
-                                                        Dec
-                                                        <span> 28</span>
-                                                    </div>
-                                                    <div className="blog-content-section">
-                                                        <div className="blo-content-title">
-                                                            <h4>How to make a hot pizza?</h4>
-                                                            <p>
-                                                                Lorem, ipsum dolor sit amet consectetur adipisicing
-                                                                elit. Neque at numquam, asperiores aut praesentium
-                                                                facilis ratione! Voluptatibus neque dignissimos ipsa
-                                                            </p>
-                                                        </div>
-                                                        <div className="blog-admin">
-                                                            <ol>
-                                                                <li>
-                                                                    <i className="flaticon-user" /> By Admin
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-calendar" /> dec 28, 2020
-                                                                </li>
-                                                            </ol>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="wrapper">
-                                            <div className="content">
-                                                <article className="blog-sub">
-                                                    <div className="blog-content">
-                                                        <img src="assets/images/blog/2.jpg" />
-                                                    </div>
-                                                    <div className="blog-content-date">
-                                                        Dec
-                                                        <span> 28</span>
-                                                    </div>
-                                                    <div className="blog-content-section">
-                                                        <div className="blo-content-title">
-                                                            <h4>How to make a hot pizza?</h4>
-                                                            <p>
-                                                                Lorem, ipsum dolor sit amet consectetur adipisicing
-                                                                elit. Neque at numquam, asperiores aut praesentium
-                                                                facilis ratione! Voluptatibus neque dignissimos ipsa
-                                                            </p>
-                                                        </div>
-                                                        <div className="blog-admin">
-                                                            <ol>
-                                                                <li>
-                                                                    <i className="flaticon-user" /> By Admin
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-calendar" /> dec 28, 2020
-                                                                </li>
-                                                            </ol>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="wrapper">
-                                            <div className="content">
-                                                <article className="blog-sub">
-                                                    <div className="blog-content">
-                                                        <img src="assets/images/blog/3.jpg" />
-                                                    </div>
-                                                    <div className="blog-content-date">
-                                                        Dec
-                                                        <span> 28</span>
-                                                    </div>
-                                                    <div className="blog-content-section">
-                                                        <div className="blo-content-title">
-                                                            <h4>How to make a hot pizza?</h4>
-                                                            <p>
-                                                                Lorem, ipsum dolor sit amet consectetur adipisicing
-                                                                elit. Neque at numquam, asperiores aut praesentium
-                                                                facilis ratione! Voluptatibus neque dignissimos ipsa
-                                                            </p>
-                                                        </div>
-                                                        <div className="blog-admin">
-                                                            <ol>
-                                                                <li>
-                                                                    <i className="flaticon-user" /> By Admin
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-calendar" /> dec 28, 2020
-                                                                </li>
-                                                            </ol>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="item">
-                                        <div className="wrapper">
-                                            <div className="content">
-                                                <article className="blog-sub">
-                                                    <div className="blog-content">
-                                                        <img src="assets/images/blog/1.jpg" />
-                                                    </div>
-                                                    <div className="blog-content-date">
-                                                        Dec
-                                                        <span> 28</span>
-                                                    </div>
-                                                    <div className="blog-content-section">
-                                                        <div className="blo-content-title">
-                                                            <h4>How to make a hot pizza?</h4>
-                                                            <p>
-                                                                Lorem, ipsum dolor sit amet consectetur adipisicing
-                                                                elit. Neque at numquam, asperiores aut praesentium
-                                                                facilis ratione! Voluptatibus neque dignissimos ipsa
-                                                            </p>
-                                                        </div>
-                                                        <div className="blog-admin">
-                                                            <ol>
-                                                                <li>
-                                                                    <i className="flaticon-user" /> By Admin
-                                                                </li>
-                                                                <li>
-                                                                    <i className="flaticon-calendar" /> dec 28, 2020
-                                                                </li>
-                                                            </ol>
-                                                        </div>
-                                                    </div>
-                                                </article>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                {/* ========================================================================= */}
-                <section className="team">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="heading">
-                                    <h2>our team</h2>
-                                </div>
-                            </div>
-                            <div className="main-team-card d-flex">
-                                <div className="team-setup">
-                                    <div className="team-items">
-                                        <div className="team-user">
-                                            <img src="assets/images/team/1.jpg" />
-                                        </div>
-                                        <div className="team-user-social">
-                                            <ol>
-                                                <li>
-                                                    <i className="flaticon-facebook" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-twitter" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-behance" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-youtube" />
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div className="team-name">
-                                            <h2>Mark Anthony</h2>
-                                            <b>Founder &amp; CEO</b>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team-setup">
-                                    <div className="team-items">
-                                        <div className="team-user">
-                                            <img src="assets/images/team/2.jpg" />
-                                        </div>
-                                        <div className="team-user-social">
-                                            <ol>
-                                                <li>
-                                                    <i className="flaticon-facebook" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-twitter" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-behance" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-youtube" />
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div className="team-name">
-                                            <h2>Jessica Lee</h2>
-                                            <b>Chinese Kitchen Lead</b>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team-setup">
-                                    <div className="team-items">
-                                        <div className="team-user">
-                                            <img src="assets/images/team/3.jpg" />
-                                        </div>
-                                        <div className="team-user-social">
-                                            <ol>
-                                                <li>
-                                                    <i className="flaticon-facebook" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-twitter" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-behance" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-youtube" />
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div className="team-name">
-                                            <h2>John Bennett</h2>
-                                            <b>French Kitchen Lead</b>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="team-setup">
-                                    <div className="team-items">
-                                        <div className="team-user">
-                                            <img src="assets/images/team/4.jpg" />
-                                        </div>
-                                        <div className="team-user-social">
-                                            <ol>
-                                                <li>
-                                                    <i className="flaticon-facebook" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-twitter" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-behance" />
-                                                </li>
-                                                <li>
-                                                    <i className="flaticon-youtube" />
-                                                </li>
-                                            </ol>
-                                        </div>
-                                        <div className="team-name">
-                                            <h2>ANDERSON JHON</h2>
-                                            <b>Sous Chef</b>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             </main>
             {/* //////////////////////Main-End/////////////////////// */}
             {/* ====================================================== */}
             {/* //////////////////////Footer-Started/////////////////////// */}
-            <footer>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <div className="wrapper">
-                                <h3>
-                                    <img src="assets/images/logo/logo1.png" />
-                                </h3>
-                                <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
-                                    repellendus necessitatibus doloribus
-                                </p>
-                                <div className="form-group">
-                                    <input
-                                        className="form-control"
-                                        placeholder="Enter Your Email"
-                                        role="text"
-                                        name="email"
-                                        type="email"
-                                    />
-                                    <i className="flaticon-email" />
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <div className="wrapper">
-                                <h2>Usefull Links</h2>
-                                <div className="content">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Home</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Menu</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Pages</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blog</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact Us</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <div className="wrapper">
-                                <h2> Opening Time</h2>
-                                <div className="content">
-                                    <ul className="d-flex se">
-                                        <li>
-                                            <a>Monday</a>
-                                            <span>8 AM &nbsp;-&nbsp; 10 PM</span>
-                                        </li>
-                                        <li>
-                                            <a>Tuseday</a>
-                                            <span>8 AM &nbsp;-&nbsp; 10 PM</span>
-                                        </li>
-                                        <li>
-                                            <a>Wednesday</a>
-                                            <span>8 AM &nbsp;-&nbsp; 10 PM</span>
-                                        </li>
-                                        <li>
-                                            <a>Thursday</a>
-                                            <span>8 AM &nbsp;-&nbsp; 10 PM</span>
-                                        </li>
-                                        <li>
-                                            <a>Friday</a>
-                                            <span>8 AM &nbsp;-&nbsp; 10 PM</span>
-                                        </li>
-                                        <li>
-                                            <a>Saturday</a>
-                                            <span>8 AM &nbsp;-&nbsp; 10 PM</span>
-                                        </li>
-                                        <li>
-                                            <a>Sunday</a>
-                                            <span>8 AM &nbsp;-&nbsp; 10 PM</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <div className="copy-right">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <p>
-                                2020 @ All Rights Reserved Designed and developed by
-                                <a href="https://www.smarteyeapps.com">smarteyeapps</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
             {/* *********************************************************** */}
         </>
 
