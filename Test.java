@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class Test {
+public class Test {
+    public static void main(String[] args) {
+        Animal cat = new Cat();
+        cat.eat(); //tính đa hình
+    }
 }

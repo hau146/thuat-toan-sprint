@@ -1,2 +1,6 @@
-package PACKAGE_NAME;public class ThuatToan282 {
+public class ThuatToan282 {
+    public static void main(String[] args) {
+        //thuật toán sx nổi bọt
+
+    }
 }
